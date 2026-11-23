@@ -4,7 +4,14 @@
 	"description": "Skryvo for n8n: write posts, articles, emails, ads and listings in a brand's voice, design their pictures and schedule them, and start workflows when posts publish.",
 	"license": "MIT",
 	"homepage": "https://skryvo.ai/docs/",
-	"keywords": ["n8n-community-node-package", "skryvo", "social media", "scheduling", "content", "ai writing"],
+	"keywords": [
+		"n8n-community-node-package",
+		"skryvo",
+		"social media",
+		"scheduling",
+		"content",
+		"ai writing"
+	],
 	"author": {
 		"name": "Flutter Studio LLC",
 		"email": "support@skryvo.ai"
@@ -23,12 +30,19 @@
 		"release": "n8n-node release",
 		"prepublishOnly": "n8n-node prerelease"
 	},
-	"files": ["dist"],
+	"files": [
+		"dist"
+	],
 	"n8n": {
 		"n8nNodesApiVersion": 1,
 		"strict": true,
-		"credentials": ["dist/credentials/SkryvoApi.credentials.js"],
-		"nodes": ["dist/nodes/Skryvo/Skryvo.node.js", "dist/nodes/SkryvoTrigger/SkryvoTrigger.node.js"]
+		"credentials": [
+			"dist/credentials/SkryvoApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Skryvo/Skryvo.node.js",
+			"dist/nodes/SkryvoTrigger/SkryvoTrigger.node.js"
+		]
 	},
 	"devDependencies": {
 		"@n8n/node-cli": "0.57.4",
@@ -39,5 +53,9 @@
 	},
 	"peerDependencies": {
 		"n8n-workflow": "*"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
 	}
 }
