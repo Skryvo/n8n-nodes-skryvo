@@ -79,6 +79,9 @@ Trigger events: Post Published, Post Failed, Article Ready, Article Failed, Resu
 checked against its `Skryvo-Signature` header (an HMAC-SHA256 with the endpoint's secret, at most five minutes
 old); one that does not match gets a 401 and starts nothing. A test delivery from Skryvo carries `"test": true`.
 
+Writing posts with pictures, designing a picture and planning an article take Skryvo about a minute. n8n gives a
+node's request 300 seconds, so these operations wait for the answer in the node itself.
+
 For an agent route without an operation here (changing a brand's look, saving defaults, uploading a video), use
 n8n's **HTTP Request** node with the predefined **Skryvo API** credential and the base URL
 `https://api.skryvo.ai/api/v1/agent`.
