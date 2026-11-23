@@ -11,7 +11,6 @@ const { SkryvoApi } = require('../dist/credentials/SkryvoApi.credentials.js');
 
 const spec = JSON.parse(readFileSync(new URL('./openapi.json', import.meta.url), 'utf8'));
 const PREFIX = '/api/v1/agent';
-const WEBHOOK_ROUTES = new Set(['GET /webhooks', 'POST /webhooks', 'DELETE /webhooks/{}']);
 
 const template = (path) => path.replace(/\{[^}]+\}/g, '{}');
 const routeOf = (request) => `${request.method} ${template(request.url.replace(/^=/, '').replace(/\{\{[^}]+\}\}/g, '{x}'))}`;
