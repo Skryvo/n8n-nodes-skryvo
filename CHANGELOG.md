@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Published from GitHub Actions through npm trusted publishing, with signed provenance; no npm token is stored.
+
 ## 0.1.0
 
 - The Skryvo node: accounts, ads, articles, brands, the calendar, channels, earlier content, emails, listings,

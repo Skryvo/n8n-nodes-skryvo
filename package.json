@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-skryvo",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Skryvo for n8n: write posts, articles, emails, ads and listings in a brand's voice, design their pictures and schedule them, and start workflows when posts publish.",
 	"license": "MIT",
 	"homepage": "https://skryvo.ai/docs/",
